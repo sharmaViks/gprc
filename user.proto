@@ -1,0 +1,29 @@
+//here we define the structure of the messages exchanged between clients and servers
+
+syntax = "proto3";
+
+// this is a service interface which contains methods that we can invoke remotely
+service UserService {
+  rpc RegisterUser (UserRequest) returns (UserResponse);
+  rpc GetUser (UserId) returns (User);
+}
+
+// this is a message type which means UserRequest can have name and email as 1st and 2nd parameter
+message UserRequest {
+  string name = 1;
+  string email = 2;
+}
+
+message UserResponse {
+  int32 id = 1;
+}
+
+message UserId {
+  int32 id = 1;
+}
+
+message User {
+  int32 id = 1;
+  string name = 2;
+  string email = 3;
+}
