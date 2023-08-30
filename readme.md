@@ -14,3 +14,6 @@ there is no user in users[] array . you will get empty and when u again run the 
 
 image.png
 
+![image](https://github.com/sharmaViks/gprc/assets/22673614/207ea16b-a20f-43c8-aeca-77eff94a959b)
+
+
